@@ -1,4 +1,4 @@
-<?
+<?php
 
 const RSS_SOURCE = 'https://lenta.ru/rss';
 const NEWS_COUNT = 5;
