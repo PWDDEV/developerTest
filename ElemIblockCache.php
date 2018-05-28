@@ -61,7 +61,6 @@ class ElemIblockCacheTable
             $obCache->EndDataCache($arElements);
 
             //echo 'Без кеша<br>';
-
         }
         return $arElements;
     }
