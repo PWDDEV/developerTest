@@ -11,6 +11,9 @@ set_time_limit(0);
 ini_set('memory_limit', '1024M');
 
 $url=@$argv[1]; // передаем rss url при вызове скрипта
+if(!$url) {
+    print "Введите rss url!"; return;
+}
 $cnt=5; // сколько новостей показывать
 $_SERVER['DOCUMENT_ROOT'] = str_replace('\\', '/', realpath(__DIR__ . '/../../../'));
 $DOCUMENT_ROOT = $_SERVER['DOCUMENT_ROOT'];
